@@ -22,7 +22,7 @@ npm install express ejs --save
 ```
 + to avoid restarting the server every time we change JS code, install nodemon as a dev dependency, which will watch our app and restart the server when needed
 ```
-npm install nodemon --save-dev 
+npm install nodemon --save-dev
 ```
 + Install dev dependencies (meaning they are not needed for prod, just for dev) of Mocha, Chai, Istanbul, Nyc and let them be auto added to package.json. Also installing istanbul, nyc, opn-cli globally too 
 ```
@@ -30,7 +30,7 @@ npm install mocha chai istanbul nyc --save-dev
 ```
 + Install related helpfull tools globally
 ```
-npm install -g istanbul nyc opn-cli 
+npm install -g istanbul nyc opn-cli
 ```
 + Modify package.json's "scripts" element to have things to;
     - run unit tests only via mocha (like "testOnly" of ex7)
