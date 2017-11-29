@@ -7,7 +7,10 @@
         "test": "test"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "testOnly": "npm run mocha --recursive",
+
+        "start_express_ejs_bootstrap_with_nodemon": "nodemon src/main_webServer.js"
     },
     "repository": {
         "type": "git",
