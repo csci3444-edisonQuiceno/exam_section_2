@@ -8,7 +8,15 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "testOnly": "npm run mocha --recursive",
+
+        "testOnlyViaMocha": "npm run mocha --recursive",
+
+        "testAndCoverage": "npm run testAndCoverage_via_istanbul && npm run testAndCoverage_via_nyc",
+        "testAndCoverage_via_nyc": "nyc mocha --recursive",
+        "testAndCoverage_via_istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
+        "openCoverageReport": "npm run openCoverageReport_inBrowser",
+        "openCoverageReport_inBrowser": "opn coverage/lcov-report/index.html",
+        "testAndCoverageAndReport": "npm run testAndCoverage && npm run openCoverageReport",
 
         "start_express_ejs_bootstrap_with_nodemon": "nodemon src/main_webServer.js"
     },

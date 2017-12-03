@@ -7,12 +7,12 @@ const numSquare = 4;
 
 describe('mySquare', function() {
     describe('toSquare', function() {
-        it('toSquare(' + num + ') should return square value of ' + numSquare, function() {
+        it('toSquare(' + num + ') should return the square of ' + num + ' which is ' + numSquare, function() {
             let result = mySquare.toSquare(num);
             assert.equal(result, numSquare);
         });
 
-        it('toSquare("' + numString + '") should return square value of ' + numSquare, function() {
+        it('toSquare("' + numString + '") should convert the string to a number then return the square of ' + num + ' which is ' + numSquare, function() {
             let result = mySquare.toSquare(numString);
             assert.equal(result, numSquare);
         });

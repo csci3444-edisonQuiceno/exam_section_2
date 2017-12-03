@@ -8,12 +8,12 @@ const numCube = 27;
 
 describe('myPowers', function() {
     describe('toSquare', function() {
-        it('toSquare(' + num + ') should return number value of ' + numSquare, function() {
+        it('toSquare(' + num + ') should return the square of ' + num + ' which is ' + numSquare, function() {
             let result = myPowers.toSquare(num);
             assert.equal(result, numSquare);
         });
 
-        it('toSquare("' + numString + '") should return number value of ' + numSquare, function() {
+        it('toSquare("' + numString + '") should convert the string to a number then return the square of ' + num + ' which is ' + numSquare, function() {
             let result = myPowers.toSquare(numString);
             assert.equal(result, numSquare);
         });
@@ -25,18 +25,18 @@ describe('myPowers', function() {
     });
 
     describe('toCube', function() {
-        it('toCube(' + num + ') should return number value of ' + numCube, function() {
-            let result = myCube.toCube(num);
+        it('toCube(' + num + ') should return the cube of ' + num + ' which is ' + numCube, function() {
+            let result = myPowers.toCube(num);
             assert.equal(result, numCube);
         });
 
-        it('toCube("' + numString + '") should return number value of ' + numCube, function() {
-            let result = myCube.toCube(numString);
+        it('toCube("' + numString + '") should convert the string to a number then return the cube of ' + num + ' which is ' + numCube, function() {
+            let result = myPowers.toCube(numString);
             assert.equal(result, numCube);
         });
 
         it('toCube should return type number', function() {
-            let result = myCube.toCube(num);
+            let result = myPowers.toCube(num);
             assert.typeOf(result, 'number');
         });
     });
