@@ -2,8 +2,8 @@ const assert = require('chai').assert;
 const mySquare = require('../../../../src/common/util/math/mySquare.js');
 
 const num = 2;
-const numString = "2";
-const numSquare = 4;
+const numString = "" + num;
+const numSquare = num * num;
 
 describe('mySquare', function() {
     describe('toSquare', function() {

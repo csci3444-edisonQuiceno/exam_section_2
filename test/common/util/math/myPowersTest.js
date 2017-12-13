@@ -2,9 +2,9 @@ const assert = require('chai').assert;
 const myPowers = require('../../../../src/common/util/math/myPowers.js');
 
 const num = 3;
-const numString = "3";
-const numSquare = 9;
-const numCube = 27;
+const numString = "" + num;
+const numSquare = num * num;
+const numCube = num * num * num;
 
 describe('myPowers', function() {
     describe('toSquare', function() {

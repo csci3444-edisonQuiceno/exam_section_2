@@ -1,16 +1,16 @@
 module.exports = {
     /**
-     * @return 
+     * @return Square of input number using toSquare from imported mySquare module
      */
     toSquare: function(inpNumber) {
-        var mySquare = require("../math/mySquare.js");
+        var mySquare = require("./mySquare.js");
         return mySquare.toSquare(inpNumber);
     },
     /**
-     * @return
+     * @return Cube of input number using toCube from imported myCube module 
      */
     toCube: function(inpNumber) {
-        var myCube = require("../math/myCube.js");
+        var myCube = require("./myCube.js");
         return myCube.toCube(inpNumber);
     }
 }

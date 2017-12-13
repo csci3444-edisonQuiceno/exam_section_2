@@ -9,7 +9,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
 
-        "testOnlyViaMocha": "npm run mocha --recursive",
+        "test_mocha_all": "mocha --recursive",
+        "testOnly": "npm run test_mocha_all",
 
         "testAndCoverage": "npm run testAndCoverage_via_istanbul && npm run testAndCoverage_via_nyc",
         "testAndCoverage_via_nyc": "nyc mocha --recursive",
